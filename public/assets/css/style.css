@@ -1,0 +1,222 @@
+/* Début TOUTE LES PAGES */
+body {
+  background: #171717;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+* {
+  outline: none !important;
+  color: #FFF;
+}
+/* Début Menu */
+.bg-dark {
+  background-color: #262424 !important;
+}
+
+.nav-link {
+  color: #FFF !important;
+  text-transform: uppercase !important;
+  font-weight: bold;
+  margin-left: 25px !important;
+}
+
+.dropdown-menu {
+  background-color: #171717;
+}
+
+.dropdown-item {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+/* Fin Menu */
+
+/* Debut CREDIT */
+.credit {
+  background-color: #262424;
+}
+
+.credit>h5, .design>p, .php>p {
+  text-transform: capitalize;
+  margin: auto;
+}
+
+.credit>h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.design {
+  float: left;
+  text-align: left;
+}
+
+.php {
+  float: right;
+  text-align: right;
+}
+/* Fin CREDIT */
+
+/* Fin TOUTE LES PAGES */
+.slideshow {
+  height: 300px;
+  margin: 35px;
+}
+
+.imageSlick {
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.slick-slide {
+  margin: 15px 0;
+}
+
+/* Début Connexion et Inscription*/
+.afficherMDP {
+  height:25px;
+  width:25px;
+  margin:-28px 5px 0 278px;
+  float: left;
+  cursor: pointer;
+}
+
+.imgLogin {
+  height:100px;
+  width:100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.btnRetour {
+  cursor: pointer;
+}
+/* Fin Connexion et Inscription*/
+
+/* Debut PAGE FILM */
+.hautTitre>h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline #FFD400;
+}
+
+.descriptionFilm {
+  margin-top: 2%;
+  background-color: #101010;
+  border-radius: 5px;
+}
+
+.videoFilm {
+  height: 600px;
+  padding: 0;
+  margin-top: 2%;
+}
+
+.videoFilm>iframe {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.bas>.lesCategories {
+  margin-left: 1%;
+  float: left;
+  height: 100%;
+}
+
+.lesCategories>a {
+  color: #C0C0C0;
+  font-size: 80%;
+  text-transform: capitalize;
+}
+
+.bas>.leTemps {
+  margin-right: 1%;
+  font-size: 90%;
+  text-align: right;
+}
+
+.leTemps>p {
+  display: inline;
+}
+
+.separateur {
+  width: 98%;
+  background-color: #F0C300;
+}
+
+.sousResumer>*>p, .sousResumer>*>h5, .sousDescription>* {
+  color: #EFEFEF;
+  display: inline;
+  font-size: 95%;
+}
+
+.sousResumer>* {
+  margin-left: 1%;
+}
+
+.resumer>p {
+  font-size: 100%;
+}
+
+.fa-dot-circle {
+  position: absolute;
+  margin: -2.1% 96.4%;
+  background: orange;
+  border-radius: 25px;
+}
+
+.noteCommentaire {
+  margin-top: 2%;
+  background-color: #101010;
+  text-align: center;
+}
+
+.ecrireCom>*, .ecrireCom>textarea:enabled {
+  background-color: inherit;
+  color: gold;
+  width: 50%;
+  margin: auto;
+  border-color: #FFF;
+  margin-top: 1%;
+}
+
+.ecrireCom>textarea:hover {
+  border-color: #FFA500;
+}
+
+/* Fin PAGE FILM */
+
+/* Début Tout les films */
+.toutLesFilms {
+  margin-top: 1%;
+}
+
+.toutLesFilms>h1 {
+  text-transform: uppercase;
+  margin-bottom: -1%;
+}
+
+.divTLF {
+  display: inline;
+}
+
+.imageTLF {
+  margin-top: 3%;
+  height: 300px;
+  width: 17%;
+  cursor: pointer;
+}
+/* Fin Tout les films */
