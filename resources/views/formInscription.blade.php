@@ -12,7 +12,7 @@
     {!! Html::style('https://pro.fontawesome.com/releases/v5.1.0/css/all.css') !!}
 
 
-    <body class="body">
+
     <div class="container">
         <i id="login-box">
             <a href="{{url('/formLogin')}}"> <i id="btnRetour" title="Retour accueil" class='fas fa-arrow-left btnRetour' ></i></a>
@@ -38,5 +38,5 @@
     </div><!-- /.container -->
     <div id="particles-js"></div>
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
-    </body>
+    
     {!! Form::close() !!}

@@ -4,16 +4,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>JudgeMovies</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
     {!! Html::style('assets/css/bootstrap.min.css') !!}
     {!! Html::style('assets/css/jquery-ui.min.css') !!}
     {!! Html::style('assets/css/slick.css') !!}
     {!! Html::style('assets/css/slick-theme.css') !!}
     {!! Html::style('assets/css/style.css') !!}
     {!! Html::style('https://pro.fontawesome.com/releases/v5.1.0/css/all.css') !!}
-
-
-
 </head>
 <body>
 <div>
@@ -21,6 +19,7 @@
         <a class="navbar-brand" href="accueil.html">
             <img src="../images/logo.png" height="50" width="50" alt="Accueil" title="Accueil">
         </a>
+        @if (Session::get('ID') > 0)
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -28,7 +27,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/allFilms')}}">Tout les films</a>
+                    <a class="nav-link" href="{{url('/listeFilms')}}">Tous les films</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -45,7 +44,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('')}}"><i class="fal fa-dice"></i> Film aléatoire</a>
+                    <a class="nav-link" href="{{url('/filmHazar')}}"><i class="fal fa-dice"></i> Film aléatoire</a>
                 </li>
 
             </ul>
@@ -53,12 +52,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('')}}"><i class="fa fa-cart-arrow-down"></i> Panier</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('/formLogin')}}"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                    <a class="nav-link" href="{{url('/logout')}}"><i class="fas fa-sign-in-alt"></i> Deconnexion</a>
                 </li>
             </ul>
         </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            @endif
+            <ul class="navbar-nav">
+                @if (Session::get('ID') == 0)
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('/getLogin')}}"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+                    </li>
+            </ul>
+        </div>
+            @endif
     </nav>
     @yield('content')
 </div>

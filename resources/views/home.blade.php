@@ -1,12 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<!doctype html>
-<html lang="fr">
-<head>
 
-
-</head>
-<body class="body">
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-12 slideshow">
@@ -37,6 +31,4 @@
 
 </div>
 
-</body>
-</html>
 @stop

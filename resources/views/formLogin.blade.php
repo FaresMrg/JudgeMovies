@@ -13,7 +13,7 @@
 {!! Html::style('https://pro.fontawesome.com/releases/v5.1.0/css/all.css') !!}
 
 
-<body class="body">
+
 <div class="container">
     <div id="login-box">
         <a href="{{url('/')}}"> <i id="btnRetour" title="Retour accueil" class='fas fa-arrow-left btnRetour' ></i></a>
@@ -24,8 +24,8 @@
         <div class="form-horizontal">
             <div class="controls">
                 <div class="form-group">
-                    <input type="text" name="pseudo" placeholder="Pseudo" class="form-control" required />
-                    <input id="password" type="password" name="password" placeholder="Mot de passe" class="form-control" required />
+                    <input type="text" name="login" placeholder="Pseudo" class="form-control" required />
+                    <input id="pwd" type="password" name="pwd" placeholder="Mot de passe" class="form-control" required />
                     <img src="../images/eye.png" id="afficherMDP" class="afficherMDP img img-responsive img-circle center-block">
                     <button type="submit" class="btn btn-default btn-block btn-custom">Login</button>
                     <center>
@@ -38,5 +38,4 @@
 </div><!-- /.container -->
 <div id="particles-js"></div>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
-</body>
 {!! Form::close() !!}
