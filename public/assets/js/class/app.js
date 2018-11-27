@@ -64,3 +64,37 @@ app.prototype.agrandir = function (image) {
 };
 
 //tout les films et accueil
+
+app.prototype.mdpLogin = function (image) {
+    image.click(function(){
+        var last = this.src.split('/').length-1;
+        last = this.src.split('/')[last].split('.')[0];
+        if (last == 'eye') {
+            this.src = './../images/eye_crossed-out.png';
+            $('#pwd')[0].type = 'text';
+        }
+        else {
+            this.src = './../images/eye.png';
+            $('#pwd')[0].type = 'password';
+        }
+    });
+};
+
+app.prototype.mdpInscription = function (image) {
+    image.click(function () {
+        var last = this.src.split('/').length - 1;
+        last = this.src.split('/')[last].split('.')[0];
+        if (last == 'eye') {
+            this.src = './../images/eye_crossed-out.png';
+            for (var i = 0; i < 2; i++) {
+                $('.mdp')[i].type = 'text';
+            }
+        }
+        else {
+            this.src = './../images/eye.png';
+            for (var i = 0; i < 2; i++) {
+                $('.mdp')[i].type = 'password';
+            }
+        }
+    });
+};
