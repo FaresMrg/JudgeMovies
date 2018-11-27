@@ -4,15 +4,14 @@
 
 {!! Form::open(['url'=>'/login']) !!}
 
-{!! Html::script('assets/js/jquery.min.js')  !!}
-{!! Html::script('assets/js/login.js') !!}
-
 {!! Html::style('assets/css/bootstrap.min.css') !!}
 {!! Html::style('assets/css/login.css') !!}
 {!! Html::style('assets/css/style.css')!!}
 {!! Html::style('https://pro.fontawesome.com/releases/v5.1.0/css/all.css') !!}
 
-
+{!! Html::script('assets/js/jquery.min.js')  !!}
+{!! Html::script('assets/js/login.js') !!}
+{!! Html::script('assets/js/class/app.js') !!}
 
 <div class="container">
     <div id="login-box">
@@ -39,3 +38,8 @@
 <div id="particles-js"></div>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
 {!! Form::close() !!}
+
+<script type="text/javascript">
+    var app = new app;
+    app.mdpLogin($('#afficherMDP'));
+</script>
