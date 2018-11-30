@@ -16,14 +16,14 @@
 <body>
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="accueil.html">
+        <a class="navbar-brand" href="{{url('/')}}">
             <img src="../images/logo.png" height="50" width="50" alt="Accueil" title="Accueil">
         </a>
         @if (Session::get('ID') > 0)
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('')}}">Accueil</a>
+                    <a class="nav-link" href="{{url('/')}}">Accueil</a>
                 </li>
 
                 <li class="nav-item">
