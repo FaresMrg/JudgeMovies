@@ -5,7 +5,7 @@ Route::get('/', function () {
 });
 
 //connexion
-route::get('/getLogin', 'UtilisateurController@getLogin');
+route::get('/getLogin', 'UtilisateurController@getLogin');  //Emmene a la page login
 
 //Authentifie le visiteur à partir du login et mdp saisis
 route::post('/login','UtilisateurController@signIn');
